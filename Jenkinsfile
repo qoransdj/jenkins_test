@@ -1,7 +1,7 @@
 node {
     def app
     stage('Clone repository') {
-        git 'https://github.com/jwpark-sungshin/fork_vs_vfork.git'
+        git 'https://github.com/qoransdj/jenkins_test.git'
     }
     stage('Build image') {
         app = docker.build("pjbear/test")

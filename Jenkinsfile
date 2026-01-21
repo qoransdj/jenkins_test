@@ -4,7 +4,7 @@ node {
         git 'https://github.com/qoransdj/jenkins_test.git'
     }
     stage('Build image') {
-        app = docker.build("pjbear/test")
+        app = docker.build("qoransdj/test")
     }
     stage('Test image') {
         app.inside {
